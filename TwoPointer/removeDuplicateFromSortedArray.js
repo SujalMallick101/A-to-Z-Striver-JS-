@@ -35,7 +35,7 @@ function removeDuplicateFromSortedArray(arr) {
             j++;
         }
     }
-    return arr.slice(0,i+1);
+    return i + 1;
 }
 
 console.log(removeDuplicateFromSortedArray(arr));
