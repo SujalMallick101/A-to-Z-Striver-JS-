@@ -19,6 +19,8 @@ function segregate(nums) {
             let temp = nums[i];
             nums[i] = nums[j];
             nums[j] = temp;
+            i++;
+            j--;
         }
     }
     return nums;
