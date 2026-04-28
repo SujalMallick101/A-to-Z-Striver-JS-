@@ -1,9 +1,13 @@
 let nums = [2, 7, 11, 15];
 let target = 9;
 
+//find elements
+
 function twoSum2(nums, target) {
     let i = 0;
     let j = nums.length - 1;
+
+    nums.sort((a, b) => a - b);
 
     while (i < j) {
         let sum = nums[i] + nums[j];
