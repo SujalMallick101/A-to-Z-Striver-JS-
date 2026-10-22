@@ -1,20 +1,19 @@
-let str = "sujal";
+let str="sujal";
 
-function reverseString(str) {
-    let stack = [];
-    let reversedStr = "";
+function reverseString(str){
+    const st=[];
 
-    for (let i = 0; i < str.length; i++) {
-        stack.push(str[i]);
+    for(let ch of str){
+        st.push(ch);
     }
 
-    while (stack.length !== 0) {
-        reversedStr += stack[stack.length - 1];
-        stack.pop();
+    let reversedStr="";
+
+    while(st.length>0){
+        reversedStr+=st.pop();
     }
 
     return reversedStr;
-
 }
 
 console.log(reverseString(str));
